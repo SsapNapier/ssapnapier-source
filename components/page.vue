@@ -1,6 +1,5 @@
 <template>
   <section>
-    <div class="wrap">
       <div class="header">
         <div class="FirstBall">
           <img src="oval1.png" alt="">
@@ -68,8 +67,6 @@
           </div>
         </div>
       </footer>
-      </div>
-
   </section>
 </template>
 
@@ -159,10 +156,6 @@
   -webkit-align-items: center
   display: flex
   align-items: center
-  // margin-top: 7vh
-@media screen and (max-width: 1024px)
-  .Content
-    // margin-top: 9%
 .SecondBall
   position: absolute
   display: flex
