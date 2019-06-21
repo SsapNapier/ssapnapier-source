@@ -77,10 +77,15 @@
 <style lang="sass">
 @import '../assets/variables'
 .header
- min-height: 25vh
+ min-height: 31.5vh
 .container
-  min-height: 68vh
+  min-height: 61.5vh
   overflow: hidden
+@media screen and (max-width: 768px)
+  .header
+   min-height: 26.5vh
+  .container
+    min-height: 64.5vh
 @media screen and (max-width: 480px)
   .header
     min-height: 1vh
@@ -117,7 +122,7 @@
   align-items: center
   width: 24%
   margin: auto
-  min-height: 18vh
+  min-height: 6vh
 .MassMediaLinks .Social
   width: 100%
   transition: .5s ease
@@ -136,8 +141,8 @@
 @media screen and (max-width: 768px)
   .MassMediaLinks
     width: 30%
-  .MassMediaLinks .Social
-    max-height: 10vh
+  // .MassMediaLinks .Social
+  //   max-height: 10vh
   .first,
   .second,
   .third,
@@ -156,6 +161,7 @@
   -webkit-align-items: center
   display: flex
   align-items: center
+  min-height: 26vh
 .SecondBall
   position: absolute
   display: flex
@@ -183,6 +189,7 @@
 @media screen and (max-width: 768px)
   .Name
     left: 10px
+    min-height: 8vh
 .Name .Member
   color: $NameColor
   font-family: Klaxons
@@ -193,19 +200,22 @@
 .Mail
   display: flex
   justify-content: center
+  min-height: 13.5vh
 .Mail .E-adress
   color: white
   font-family: AvenirNextLight
   font-size: 1.4rem
   font-weight: 200
-  margin-top: 6vh
+  // margin-top: 6vh
   z-index: 2
 @media screen and (max-width: 1024px)
   .Mail .E-adress
-     margin-top: 8%
+     // margin-top: 8%
 @media screen and (max-width: 768px)
+  .Mail
+    min-height: 13vh
   .Mail .E-adress
-    margin-top: 9%
+    // margin-top: 9%
     font-size: 2.1rem
 @media screen and (max-width: 480px)
   .Name
@@ -223,12 +233,9 @@
 .Phone
   display: flex
   justify-content: center
-  margin-top: 8.5vh
-  padding-bottom: 0vh
 @media screen and (max-width: 768px)
   .Phone
-     margin-top: 12%
-     padding-bottom: 15%
+    min-height: 14vh
 .Phone .Number
   color: white
   font-family: AvenirNextLight
@@ -254,7 +261,6 @@
   color: white
 .footerLine
   display: flex
-  padding-bottom: vh
   margin: auto
   font-size: 20px
   justify-content: space-between
@@ -286,7 +292,7 @@
   .footerLine
     position: absolute
     bottom: 0
-    padding-bottom: calc(11.5vh - 0%)
+    padding-bottom: 11.5vh
     flex-direction: column
     align-items: center
     width: 100%
