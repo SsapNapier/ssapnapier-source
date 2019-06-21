@@ -7,8 +7,6 @@
         </div>
       </div>
       <div class="container">
-
-        <div class="margin-top">&nbsp;</div>
          <div class="MassMediaLinks">
           <div class="first">
             <a href="https://www.linkedin.com/in/%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0-%D0%BC%D0%B8%D1%85%D0%B5%D0%B5%D0%B2%D0%B0-b84002187?trk=people-guest_profile-result-card_result-card_full-click">
@@ -84,11 +82,13 @@
 .header
  min-height: 25vh
 .container
-  min-height: 61vh
+  min-height: 68vh
   overflow: hidden
 @media screen and (max-width: 480px)
+  .header
+    min-height: 1vh
   .container
-    min-height: 61vh
+    min-height: 99vh
 .FirstBall
   position: absolute
   left: 86%
@@ -99,8 +99,6 @@
   z-index: 1
 .FirstBall img
   display: none
-.margin-top
-  display: none
 @media screen and (max-width: 1024px)
   .FirstBall
     left: 82%
@@ -108,18 +106,13 @@
     padding-top: 18%
 @media screen and (max-width: 480px)
   .FirstBall
-    position: absolute
     background: 0
     padding-top: 0
     left: 50%
     width: 50%
-    min-height: 33vh
   .FirstBall img
     width: 100%
     display: block
-  .margin-top
-    display: block
-    min-height: 9vh
 .MassMediaLinks
   position: relative
   display: flex
@@ -128,9 +121,7 @@
   width: 24%
   margin: auto
   min-height: 18vh
-  // padding-top: 26.5vh
 .MassMediaLinks .Social
-  // margin-top:
   width: 100%
   transition: .5s ease
 .first,
@@ -158,17 +149,11 @@
     min-width: 30px
 @media screen and (max-width: 480px)
   .MassMediaLinks
-    min-height: 13vh
+    min-height: 26vh
     min-width: 87%
     margin-top: 0
   .MassMediaLinks .Social
     width: 121%
-  // .first,
-  // .second,
-  // .third,
-  // .fourth
-  //   max-height: 40%
-  //   min-width: 40px
 .Content
   display: -webkit-flex
   -webkit-align-items: center
