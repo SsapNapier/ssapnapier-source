@@ -1,8 +1,9 @@
 <template>
   <section>
+    <div class="wrap">
       <div class="header">
         <div class="FirstBall">
-          <img src="oval1.png" alt="">
+          <img src="first.svg" alt="">
         </div>
       </div>
       <div class="container">
@@ -29,10 +30,11 @@
           </div>
         </div>
         <div class="Content">
-          <div class="SecondBall">
-          </div>
+            <div class="SecondBall"></div>
           <div class="Name">
-            <h1 class="Member">Elena Mikheeva</h1>
+            <span>
+              <h1 class="Member">Elena Mikheeva</h1>
+            </span>
           </div>
         </div>
         <div class="Mail">
@@ -45,7 +47,7 @@
       <footer>
         <div  class="OtherText">
           <div class="ThirdBall">
-            <img src="oval2.png" alt="">
+            <img src="second.svg" alt="">
           </div>
           <div class="footerLine">
             <div class="love">
@@ -54,9 +56,6 @@
             <div class="logo">
               <div class="studio">
                 <p>Founder & CEO of</p>
-              </div>
-              <div class="need">
-		             &nbsp;
               </div>
               <div class="web">
                 <a href="https://its-web.ru/">
@@ -67,6 +66,7 @@
           </div>
         </div>
       </footer>
+     </div>
   </section>
 </template>
 
@@ -77,20 +77,23 @@
 <style lang="sass">
 @import '../assets/variables'
 .header
- min-height: 31.5vh
-.container
-  min-height: 61.5vh
-  overflow: hidden
+  min-height: 24.2vh
 @media screen and (max-width: 768px)
   .header
-   min-height: 26.5vh
+    min-height: 26.5vh
   .container
-    min-height: 64.5vh
+    min-height: 67vh
+@media screen and (max-height: 350px)
+   .header
+     min-height: 14vh
+   .container
+     min-height: 70vh
 @media screen and (max-width: 480px)
   .header
-    min-height: 1vh
+    min-height: 0vh
   .container
-    min-height: 99vh
+    min-height: 100vh
+    overflow: hidden
 .FirstBall
   position: absolute
   left: 86%
@@ -121,8 +124,8 @@
   justify-content: space-between
   align-items: center
   width: 24%
-  margin: auto
-  min-height: 6vh
+  margin: 0 auto
+  min-height: 19.8vh
 .MassMediaLinks .Social
   width: 100%
   transition: .5s ease
@@ -141,8 +144,6 @@
 @media screen and (max-width: 768px)
   .MassMediaLinks
     width: 30%
-  // .MassMediaLinks .Social
-  //   max-height: 10vh
   .first,
   .second,
   .third,
@@ -151,23 +152,25 @@
     min-width: 30px
 @media screen and (max-width: 480px)
   .MassMediaLinks
-    min-height: 26vh
+    position: relative
+    min-height: 27vh
     min-width: 87%
     margin-top: 0
   .MassMediaLinks .Social
     width: 121%
 .Content
-  display: -webkit-flex
-  -webkit-align-items: center
+  position: relative
   display: flex
-  align-items: center
-  min-height: 26vh
+  min-height: 18vh
+@media screen and (max-width: 768px)
+  .Content
+    min-height: 16vh
 .SecondBall
   position: absolute
   display: flex
-  align-items: center
   width: 14%
-  padding-top: 28%
+  margin-top: -9.7%
+  padding-top: 27.6%
   border-radius: 0 100% 100% 0 / 0 50% 50% 0
   background-color: $BallColor
   z-index: 1
@@ -177,65 +180,66 @@
   .SecondBall
     width: 18%
     padding-top: 36%
+    margin-top: -14.4%
+@media screen and (max-width: 768px)
+  .SecondBall
 @media screen and (max-width: 480px)
   .SecondBall
+    width: 0
     background: none
 .Name
   position: relative
-  left: 14px
+  left: 6.5%
   display: flex
-  margin: 0 auto
   z-index: 2
 @media screen and (max-width: 768px)
   .Name
-    left: 10px
     min-height: 8vh
 .Name .Member
   color: $NameColor
   font-family: Klaxons
-  font-size: 3.55rem
-  letter-spacing: 0.38em
+  font-size: 3.54rem
+  letter-spacing: 0.395em
   font-weight: normal
   display: flex
 .Mail
+  position: relative
   display: flex
   justify-content: center
-  min-height: 13.5vh
+  min-height: 13.3vh
 .Mail .E-adress
   color: white
   font-family: AvenirNextLight
   font-size: 1.4rem
   font-weight: 200
-  // margin-top: 6vh
   z-index: 2
-@media screen and (max-width: 1024px)
-  .Mail .E-adress
-     // margin-top: 8%
 @media screen and (max-width: 768px)
   .Mail
     min-height: 13vh
   .Mail .E-adress
-    // margin-top: 9%
     font-size: 2.1rem
 @media screen and (max-width: 480px)
   .Name
-    min-height: 22vh
+    left: 2.5%
+    min-height: 18.2vh
   .Name .Member
     text-align: center
-    left: 10px
     font-size: 5.4rem
+  .Mail
+    min-height: 12vh
   .Mail .E-adress
     position: relative
     margin: auto
     font-weight: 200
-    min-height: 8.5vh
     font-size: 3.105rem
 .Phone
+  position: relative
   display: flex
   justify-content: center
+  min-height: 17.8vh
 @media screen and (max-width: 768px)
   .Phone
-    min-height: 14vh
+    min-height: 0vh
 .Phone .Number
   color: white
   font-family: AvenirNextLight
@@ -249,11 +253,16 @@
   .Phone
     position: relative
     margin: auto
-    min-height: 4vh
+    min-height: 4.4vh
     padding-bottom: 25%
   .Phone .Number
     margin: auto
     font-size: 3.1rem
+@media screen and (max-height: 280px)
+  .Phone
+    position: relative
+    margin: auto
+    padding-bottom: 0%
 .OtherText
   display: flex
   position: relative
