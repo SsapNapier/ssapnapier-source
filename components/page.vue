@@ -1,6 +1,5 @@
 <template>
   <section>
-    <div class="wrap">
       <div class="header">
         <div class="FirstBall">
           <img src="first.svg" alt="">
@@ -66,7 +65,6 @@
           </div>
         </div>
       </footer>
-     </div>
   </section>
 </template>
 
@@ -258,7 +256,7 @@
   .Phone .Number
     margin: auto
     font-size: 3.1rem
-@media screen and (max-height: 280px)
+@media screen and (max-height: 350px)
   .Phone
     position: relative
     margin: auto
@@ -315,6 +313,8 @@
     width: 28%
     display: flex
   .ThirdBall img
+    position: absolute
+    bottom: 0
     width: 100%
 @media screen and (max-width: 768px)
   .logo .web
